@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>REST API Frontend demo</title>
+  
+  <link rel="stylesheet" type="text/css" href="styling.css">
+
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="register_supplier.html">Supplier Registration</a></li>
+    <li><a href="generate_gatepass.html">Generate Gatepass</a></li>
+    <li><a href="view_gatepasses.html">View Gatepasses</a></li>
+    <li><a href="forgot_authcode.html">Forgot Auth Code ?</a></li>
+  </ul>
+  <br><br>
+
+  <form>
+    Supplier Auth Code: <input type="password" id="supplierAuthCode" name="supplierAuthCode"><br><br>
+    <input type="checkbox" onclick="showPassword()">Show Password<br><br>
+    Inventory Name:  <input type="text" id="inventoryName" name="inventoryName"><br><br>
+    Inventory Address: <input type="text" id="inventoryAddress" name="inventoryAddress"><br><br>
+    Inventory Mobile Number:  <input type="text" id="inventoryPhonenumber" name="inventoryPhonenumber"><br><br>
+    
+    Customer Name:  <input type="text" id="customerName" name="customerName"><br><br>
+    Customer Address: <input type="text" id=customerAddress" name="customerAddress"><br><br>
+    Customer Mobile Number:  <input type="text" id="customerPhonenumber" name="customerPhonenumber"><br><br>
+    Products: <input type="text" id=products" name="products"><br><br>
+
+
+    <button type="button" onclick=generateGatepass()> Register </button>
+</form>
+
+   <script src="generate_gatepass.js"></script>
+</body>
+
+
+</html>
