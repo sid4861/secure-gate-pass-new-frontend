@@ -1,7 +1,7 @@
 function viewGatepasses() {
     var supplierAuthCode = document.getElementById("supplierAuthCode").value
 
-    var url = new URL("http://localhost:8080/secure-gate-pass/supplier/retrieve-gatepasses?supplierAuthCode=183586")
+    var url = new URL("https://secure-gate-pass-new.cfapps.io/secure-gate-pass/supplier/retrieve-gatepasses?supplierAuthCode=183586")
     url.searchParams.set('supplierAuthCode', supplierAuthCode)
     console.log(url)
 
@@ -19,7 +19,7 @@ function viewGatepasses() {
             showTableHeaders(myTable)
 
             showTableData(data, myTable)
-            
+
         } else {
             console.log('error');
         }
