@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Secure Gatepass</title>
+  <title>REST API Frontend demo</title>
   
   <link rel="stylesheet" type="text/css" href="styling.css">
 
@@ -23,7 +23,16 @@
     <li><a href="forgot_authcode.html">Forgot Auth Code ?</a></li>
   </ul>
   <br><br>
-  
+
+  <form>
+    Supplier Auth Code: <input type="password" id="supplierAuthCode" name="supplierAuthCode"><br><br>
+    <input type="checkbox" onclick="showPassword()">Show Password<br><br><br>
+
+    <button type="button" onclick=viewGatepasses()> View Gatepasses </button>
+</form>
+
+   <script src="view_gatepasses.js"></script>
 </body>
+
 
 </html>
