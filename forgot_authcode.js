@@ -1,11 +1,9 @@
 function retrieveAuthCode(){
 
-    var supplierEmail = document.getElementById("supplierEmail").value
     var supplierPhonenumber = document.getElementById("supplierPhonenumber").value
 
-    var url = new URL("http://localhost:8080/secure-gate-pass/supplier/forgot-authcode?PhoneNumber=8308760642&Email=gmail.com")
+    var url = new URL("http://localhost:8080/secure-gate-pass/supplier/forgot-authcode?PhoneNumber=8308760642")
     url.searchParams.set('PhoneNumber', supplierPhonenumber)
-    url.searchParams.set('Email', supplierEmail)
     console.log(url)
 
     // Create a request variable and assign a new XMLHttpRequest object to it.
