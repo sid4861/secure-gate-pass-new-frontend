@@ -29,7 +29,7 @@ function generateGatepass(){
         }
       });
       
-      xhr.open("POST", "http://localhost:8080/secure-gate-pass/supplier/generate-gatepass");
+      xhr.open("POST", "https://secure-gate-pass-new.cfapps.io/secure-gate-pass/supplier/generate-gatepass");
       xhr.setRequestHeader("content-type", "application/json");
       xhr.setRequestHeader("cache-control", "no-cache");
       xhr.send(data);

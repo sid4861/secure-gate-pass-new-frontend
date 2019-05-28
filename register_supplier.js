@@ -22,7 +22,7 @@ function registerSupplier() {
         }
     });
 
-    xhr.open("POST", "http://localhost:8080/secure-gate-pass/supplier/register");
+    xhr.open("POST", "https://secure-gate-pass-new.cfapps.io/secure-gate-pass/supplier/register");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("cache-control", "no-cache");
 

@@ -2,7 +2,7 @@ function retrieveAuthCode(){
 
     var supplierPhonenumber = document.getElementById("supplierPhonenumber").value
 
-    var url = new URL("http://localhost:8080/secure-gate-pass/supplier/forgot-authcode?PhoneNumber=8308760642")
+    var url = new URL("https://secure-gate-pass-new.cfapps.io/secure-gate-pass/supplier/forgot-authcode?PhoneNumber=8308760642")
     url.searchParams.set('PhoneNumber', supplierPhonenumber)
     console.log(url)
 
